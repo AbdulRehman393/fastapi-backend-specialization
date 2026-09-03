@@ -1,12 +1,10 @@
 # FastAPI & Backend Development Specialization
 
-This repository documents my progress, core concept implementations, and a production-ready capstone project for the **Ultimate Guide to FastAPI and Backend Development Specialization** (Coursera/Packt). 
-
-The architectural patterns, secure routing, and deployment strategies mastered here directly support the backend infrastructure for my Smart Scholarship & Funding Advisor platform.
+This repository serves as a structured learning log and technical reference for the **Ultimate Guide to FastAPI and Backend Development Specialization** (Coursera/Packt). It documents my progress, core concept implementations, and a production-ready capstone project designed to showcase scalable backend architecture.
 
 **Tech Stack**
 * **Framework:** FastAPI, Python
-* **Databases:** PostgreSQL, SQLAlchemy (ORM), NoSQL integrations
+* **Databases:** PostgreSQL, SQLAlchemy (ORM), SQL, and NoSQL integrations
 * **Security:** OAuth2, JWT Authentication
 * **Testing & Deployment:** Pytest, Docker, AWS
 
