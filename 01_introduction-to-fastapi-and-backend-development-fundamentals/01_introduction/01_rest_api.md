@@ -6,7 +6,7 @@ Think about when you check an order tracking status on a website, you visit the 
 Similarly, API allows a program to request data from another server directly using a code without needing a browser or user interface. This interaction is called an
 API or Application Programming Interface
 
-(image)
+![api](assets/01_api.png)
 
 
 **REST** stands for representational state transfer is a popular approach for billing APIs. It provides a set of guidelines and rules of how these APIs should be designed
@@ -19,7 +19,7 @@ For the shipment status example, we might have an endpoint like /shipment
 
 Here, a program sending an API request is called the client.
 
-(image)
+![api](assets/02_client.png)
 
 Now each request also uses a specific http method
 
@@ -55,16 +55,18 @@ shipment. In REST APIs, the body data is usually sent in JSON format using key-v
 
 JSON is easy for humans to read and write and it's also easy for machines to parse and generate
 
-(image)
+![api](assets/03_request_body_and_header.png)
 
 
 The client sends this request to the API server.
+
+![api](assets/04_request_api_server.png)
 
 The Server is the machine that listens these requests. It receives the requests, processes it based on the endpoint method headers and body and then send back a response
 
 Every API response include a status code which tells the client how the request went.
 
-(image)
+![api](assets/05_status_code.png)
 
 e.g., if you are getting status code **202** , it means ok, everything worked successfullly.
 
@@ -89,7 +91,9 @@ In this way, the client can check the status code in the response to quickly det
 
 - Similar to request, a response also has headers and usually a body
 - Response headers might contain information about the server, the format of the data in the response body or how large the data i
-image
+
+![api](assets/06_response_structure.png)
+
 - there are possible headers and their meaning depend on the API
 - the body of the response contain the actual data, the client asked for, this data is also in JSON format like the request body.
 
