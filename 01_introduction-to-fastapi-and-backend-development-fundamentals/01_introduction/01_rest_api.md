@@ -68,14 +68,14 @@ Every API response include a status code which tells the client how the request 
 
 ![api](assets/05_status_code.png)
 
-e.g., if you are getting status code **202** , it means ok, everything worked successfullly.
+e.g., if you are getting status code **200** , it means ok, everything worked successfullly.
 
 ### Response Status Code
 
-200    :   OK
-400    :  Bad Request      , if a client sends something invalid
-500    :  Server Error     , If server had a problem
-418    :  I'm a teapot
+- 200    :   OK
+- 400    :  Bad Request      , if a client sends something invalid
+- 500    :  Server Error     , If server had a problem
+- 418    :  I'm a teapot
 
 - **2XX**        Success
 
