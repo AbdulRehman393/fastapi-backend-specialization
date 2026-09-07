@@ -9,7 +9,7 @@ API or Application Programming Interface
 ![api](assets/01_api.png)
 
 
-**REST** stands for representational state transfer is a popular approach for billing APIs. It provides a set of guidelines and rules of how these APIs should be designed
+**REST** stands for representational state transfer is a popular approach for building APIs. It provides a set of guidelines and rules of how these APIs should be designed
 and function.
 
 When a program needs to communicate with a REST API, it sends a request to a specific address on the server. This address is often called an endpoint, technically a uri or 
