@@ -12,7 +12,7 @@ To build simple API endpoints with FastAPI, we can start with a basic python fun
 
 ```text
 def read_shipment(id: int):
-  pass
+    pass
 ```
 
 We can make it endpoint using a decorator, telling it which request method and path to handle. Then you can return data from that function and FastAPI sends it back as the
@@ -34,5 +34,37 @@ def read_shipment(id: int):
 
 Once the endpoints are defined, we can run the API server using FastAPI and it's ready to accept requests and send responses.
 
+## Key Features:
+- 🚀 High performance
+- ✅ Automatic request validation
+- 📖 Automatic interactive API documentation (Swagger UI and ReDoc)
+- 📝 Uses Python type hints
+- 🔒 Built-in support for data validation and serialization
+- ⚡ Supports asynchronous programming (async/await)
+
+**What is meant by Serialization:**
+
+Serialization means converting data from a Python object or another in-memory format into a format that can be easily stored somewhere, such as through an API.
+
+example:
+
+Suppose we have a python dictionary
+
+```text
+user = {
+       "name" : "Ali",
+        "age" : 22
+          }
+```
+
+When FastAPI needs to send this data to a client, it can serialize it into JSON.
+```text
+"name" : "Ali"
+"age"  : 22
+}
+```
+
+### Why do we need serialization:
+Python objects are not necessarily in the format that another system can directly understand.
 
 
