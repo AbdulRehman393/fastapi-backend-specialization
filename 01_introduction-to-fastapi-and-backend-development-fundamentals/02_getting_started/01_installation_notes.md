@@ -59,3 +59,55 @@ venv
    └── Pydantic ...
 ```
 
+The projects can have different package versions without interfering with each other.
+
+4. ./venv\
+   
+This tells Python where to create the virtual environment.
+./ means:
+
+the current directory
+
+And venv is the name of the folder you want to create.
+
+Thus,
+```
+./venv
+```
+Create a folder named venv in the current directory.
+
+Hence;
+
+```
+python -m venv ./venv
+```
+means
+Use Python's venv module to create a virtual environment named venv inside the current directory.
+
+You could also write:
+```
+python -m venv venv
+```
+
+It's effectively the same thing.
+
+### Note:
+Creating the virtual environment doesn't activate it.
+
+On Windows, after creating it, you typically activate it with:
+```
+.\venv\Scripts\activate
+```
+Then your terminal usually shows something like:
+```
+(venv) C:\my-fastapi-project>
+```
+
+now, you can install packages such as:
+```
+pip install fastapi[all]
+```
+
+**It install FastAPI along with all the optional dependencies recommended/provided by FastAPI for additional features.**
+
+
