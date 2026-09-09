@@ -13,7 +13,12 @@ def get_shipment():
 # to mark this as a route handler on get method for this url i.e., /shipment, We start our server
 # with this command fastapi dev <file_name> on development mode at local host, then we used any 
 # browser to make a request inside of our server and it used our function to return this data back
+# FastAPI automatically converts this dictionary into JSON when sending it as an HTTP response.
 # and that's how we define our API endpoints using FastAPI.
 
+# A route handler is a function that runs when a request comes to a particular API route.
+# @app.get("/shipment") → defines the route or path
+# get_shipment() → route handler function
+# return {...} → response sent back to the client
 
 
