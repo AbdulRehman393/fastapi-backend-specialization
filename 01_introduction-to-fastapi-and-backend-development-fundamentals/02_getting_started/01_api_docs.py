@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+from scalar_fastapi import get_scalar_api_reference
 
 app = FastAPI()
 
@@ -20,5 +21,15 @@ def get_shipment():
 # @app.get("/shipment") → defines the route or path
 # get_shipment() → route handler function
 # return {...} → response sent back to the client
+
+
+@app.get("/scalar", include_in_schema = False)
+def get_scalar_docs():
+    return get_scalar_api_reference(
+        openapi_url = app.openapi_url,
+        title = "Scalar API"
+    )
+
+# above we have defined custom documentaion usding open API specification
 
 
