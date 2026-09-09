@@ -23,13 +23,22 @@ def get_shipment():
 # return {...} → response sent back to the client
 
 
-@app.get("/scalar", include_in_schema = False)
+# ------- API Documentation  ---------
+# FastAPI takes the endpoints which we have defined and the OpenAPI specification for them.
+# OpenAPI is the industry-standard specification for designing and documenting APIs (formerly known as Swagger).
+# FastAPI generates OpenAPI specifications and Swagger UI is used to generate this documentation.
+# We can use it as an API client as well; we can make requests there and check the response.
+# If we write /redoc instead of /docs in the URL, it generates documentation that is lightweight.
+# We can also generate custom documentation using the OpenAPI specifications. Here we are
+# generating Scalar docs.
+
+@app.get("/scalar", include_in_schema=False)
 def get_scalar_docs():
     return get_scalar_api_reference(
-        openapi_url = app.openapi_url,
-        title = "Scalar API"
+        openapi_url=app.openapi_url,
+        title="Scalar API"
     )
 
-# above we have defined custom documentaion usding open API specification
+# Above we have defined custom documentation using the OpenAPI specification.
 
 
