@@ -7,11 +7,9 @@ def custom_fence(fence: str = "+"):
             print(fence * len(text))
         return wrapper
     return add_fence
-    
 
 
-
-
+# Using custom decorator
 @custom_fence("-")
 def log(text: str):
     print(text)
