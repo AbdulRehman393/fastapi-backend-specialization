@@ -21,3 +21,11 @@ def log(text: str):
 log("ballon")
 
 
+# Function Typing
+from collections.abc import Callable
+from typing import Any
+
+
+# This is how we type hint function in python
+def decorator(func: Callable[[Any], None]):
+    pass
