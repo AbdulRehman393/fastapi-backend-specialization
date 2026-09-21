@@ -28,4 +28,5 @@ from typing import Any
 
 # This is how we type hint function in python
 def decorator(func: Callable[[Any], None]):
+    #         argument/s type ☝️    👆 return type
     pass
